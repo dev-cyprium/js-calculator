@@ -1,0 +1,48 @@
+header {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.container {
+	margin-bottom: 20px;
+}
+
+#calculator {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 1px solid gray;
+	margin-bottom: 50px;
+}
+
+
+#display {
+	height: 70px;
+	line-height: 70px;
+	font-family: monospace;
+	text-align: right;
+	padding-right: 5px;
+	border-bottom: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+
+.button {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-right: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.num {
+	background-color: #cccccc;
+}
+
+.button:first-child {
+	border-left: 1px solid gray;
+}
+
+.button:hover {
+	background-color: gray;
+}
