@@ -1,3 +1,8 @@
+// Stack object
+var Stack = function() {
+	
+}
+
 var calculateExpression = function(expression) {
 	return "result";
 }
@@ -8,12 +13,14 @@ var onButtonClick = function(e) {
 
 	// parse symbol if x^2, ln, sin, cos, !, sqrt
 	// x^2
-	if(symb.charCodeAt(1) == 178) {
+	console.log(symb.charCodeAt(0));
+	if(symb.charCodeAt(0) == 178) {
 		symb = String.fromCharCode(178);
 	}
 	// sqrt 
-	else if(symb.charCodeAt(1) == 120) {
-		symb = String.fromCharCode(120);
+	else if(symb.charCodeAt(0) == 8730) {
+		console.log("fired");
+		symb = String.fromCharCode(8730);
 	} 
 	else if(symb == 'sin') {
 		symb = 'sin(';
@@ -21,7 +28,7 @@ var onButtonClick = function(e) {
 	else if(symb == 'cos') {
 		symb = 'cos(';
 	}
-	else if(symb == 'ln') {
+	else if(symb == 'Ln') {
 		symb = 'ln(';
 	} 
 	else if(symb == 'x!') {
